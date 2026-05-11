@@ -1,3 +1,54 @@
 .header {
-  
+  padding: 28px 0 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+
+  &_in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1584px;
+    padding: 0 40px;
+    margin: auto;
+  }
+
+  .logo {
+    width: 108px;
+    height: 31px;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  &_link {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: $color-white;
+      transition: .3s ease;
+
+      &:hover {
+        color: $color-green-light;
+      }
+    }
+  }
+
+  &_btn {
+    padding: 16px 32px;
+    border-radius: 16px;
+    background: $color-white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: $color-green;
+  }
 }

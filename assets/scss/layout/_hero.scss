@@ -1,0 +1,109 @@
+// hero
+.hero {
+  background-image: url('../images/home_bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  padding: 194px 0 100px 0;
+
+  h1 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 76px;
+    letter-spacing: -2%;
+    color: $color-white2;
+
+    span {
+      color: $color-green-light;
+
+      &.one {
+        font-style: italic;
+      }
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: $color-white;
+    max-width: 400px;
+    margin-left: auto;
+    margin-bottom: 40px;
+    position: relative;
+
+    img {
+      position: absolute;
+      left: -66px;
+      top: -68px;
+    }
+  }
+
+  &_contact {
+    padding: 8px 8px 8px 40px;
+    border-radius: 28px;
+    background: #FFFFFF1A;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      max-width: 600px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: $color-white;
+      text-align: left;
+      margin: 0;
+    }
+  }
+
+  &_btn {
+    height: 76px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: $color-green;
+    transition: .3s ease;
+    padding: 4px;
+
+    span {
+      padding: 20px 26px 20px 36px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      color: $color-white;
+      transition: .3s ease;
+    }
+
+    .icon {
+      width: 68px;
+      height: 68px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: $color-white;
+      padding: 0;
+
+      svg {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    &:hover {
+      background: $color-green-light;
+      span {
+        color: $color-dark;
+      }
+    }
+  }
+}
+// hero

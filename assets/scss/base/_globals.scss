@@ -27,6 +27,7 @@ body {
   font-family: $font-Inter-Tight;
   font-style: normal;
   font-display: swap;
+  margin: 8px;
 }
 
 input, textarea {
@@ -47,7 +48,8 @@ address {
 }
 
 .wrapper {
-  width: 100%;
+  max-width: 1584px;
+  margin: auto;
   overflow: hidden;
 }
 
@@ -63,15 +65,23 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  max-width: calc(1337px);
+  max-width: calc(1284px + 32px);
   margin: 0 auto;
-
-  @include media('lg') {
-    padding: 0 20px;
-  }
-
+  padding: 0 16px;
 }
 
 .section-top {
   margin-top: 160px;
+}
+
+.btn-white {
+  transition: .3s ease;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid #FFFFFF80;
+    color: $color-white;
+    backdrop-filter: blur(10px);
+    background: #FFFFFF1A;
+  }
 }
