@@ -338,6 +338,11 @@ body {
   font-display: swap;
   margin: 8px;
 }
+@media (max-width: 993px) {
+  body {
+    margin: 4px;
+  }
+}
 
 input, textarea {
   outline: none;
@@ -402,6 +407,11 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
+@media (max-width: 993px) {
+  .header {
+    padding: 20px 0 16px 0;
+  }
+}
 .header_in {
   display: flex;
   align-items: center;
@@ -410,16 +420,51 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 0 40px;
   margin: auto;
 }
+@media (max-width: 993px) {
+  .header_in {
+    flex-wrap: wrap;
+    row-gap: 12px;
+    padding: 0 16px;
+  }
+}
 .header .logo {
   width: 108px;
   height: 31px;
   display: flex;
   flex-shrink: 0;
 }
+@media (max-width: 993px) {
+  .header .logo {
+    width: 80px;
+    height: 23px;
+  }
+}
 .header_link {
   display: flex;
   align-items: center;
   gap: 32px;
+}
+@media (max-width: 993px) {
+  .header_link {
+    width: 100%;
+    order: 3;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 17px;
+  }
+}
+.header_link .mobile_link {
+  display: none;
+}
+@media (max-width: 993px) {
+  .header_link .mobile_link {
+    display: block;
+  }
+}
+@media (max-width: 993px) {
+  .header_link .desktop_link {
+    display: none;
+  }
 }
 .header_link a {
   font-weight: 500;
@@ -428,6 +473,12 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #FFFFFF;
   transition: 0.3s ease;
+}
+@media (max-width: 993px) {
+  .header_link a {
+    font-size: 13px;
+    line-height: 17px;
+  }
 }
 .header_link a:hover {
   color: #B6E28A;
@@ -442,6 +493,13 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #1AB248;
 }
+@media (max-width: 993px) {
+  .header_btn {
+    font-size: 13px;
+    line-height: 17px;
+    padding: 12px 24px;
+  }
+}
 
 .hero {
   background-image: url("../images/home_bg.webp");
@@ -450,6 +508,12 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 40px;
   padding: 194px 0 100px 0;
 }
+@media (max-width: 993px) {
+  .hero {
+    border-radius: 24px;
+    padding: 154px 0 52px 0;
+  }
+}
 .hero h1 {
   font-weight: 700;
   font-size: 70px;
@@ -457,13 +521,32 @@ p, h1, h2, h3, h4, h5, h6 {
   letter-spacing: -2%;
   color: #FDFFFB;
 }
+@media (max-width: 1200px) {
+  .hero h1 br {
+    display: none;
+  }
+}
 .hero h1 span {
   color: #B6E28A;
 }
 .hero h1 span.one {
   font-style: italic;
 }
-.hero p {
+@media (max-width: 993px) {
+  .hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+}
+@media (max-width: 640px) {
+  .hero h1 {
+    max-width: 320px;
+    margin: 0 auto 24px auto;
+  }
+}
+.hero_text {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -474,7 +557,12 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
   position: relative;
 }
-.hero p img {
+@media (max-width: 993px) {
+  .hero_text {
+    display: none;
+  }
+}
+.hero_text img {
   position: absolute;
   left: -66px;
   top: -68px;
@@ -488,6 +576,21 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 993px) {
+  .hero_contact {
+    border-radius: 24px;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    margin: auto;
+    padding: 24px;
+  }
+}
+@media (max-width: 640px) {
+  .hero_contact {
+    max-width: 320px;
+  }
+}
 .hero_contact p {
   max-width: 600px;
   font-weight: 400;
@@ -496,6 +599,13 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   text-align: left;
   margin: 0;
+}
+@media (max-width: 993px) {
+  .hero_contact p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
 .hero_btn {
   height: 76px;
@@ -508,6 +618,13 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: 0.3s ease;
   padding: 4px;
 }
+@media (max-width: 993px) {
+  .hero_btn {
+    width: 238px;
+    height: 60px;
+    border-radius: 16px;
+  }
+}
 .hero_btn span {
   padding: 20px 26px 20px 36px;
   font-weight: 500;
@@ -516,6 +633,13 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #FFFFFF;
   transition: 0.3s ease;
+}
+@media (max-width: 993px) {
+  .hero_btn span {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 20px 10px 28px;
+  }
 }
 .hero_btn .icon {
   width: 68px;
@@ -528,9 +652,22 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #FFFFFF;
   padding: 0;
 }
+@media (max-width: 993px) {
+  .hero_btn .icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+  }
+}
 .hero_btn .icon svg {
   width: 48px;
   height: 48px;
+}
+@media (max-width: 993px) {
+  .hero_btn .icon svg {
+    width: 36px;
+    height: 36px;
+  }
 }
 .hero_btn:hover {
   background: #B6E28A;

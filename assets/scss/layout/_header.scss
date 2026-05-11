@@ -6,6 +6,10 @@
   width: 100%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 
+  @include media('lg') {
+    padding: 20px 0 16px 0;
+  }
+
   &_in {
     display: flex;
     align-items: center;
@@ -13,6 +17,12 @@
     max-width: 1584px;
     padding: 0 40px;
     margin: auto;
+
+    @include media('lg') {
+      flex-wrap: wrap;
+      row-gap: 12px;
+      padding: 0 16px;
+    }
   }
 
   .logo {
@@ -20,12 +30,40 @@
     height: 31px;
     display: flex;
     flex-shrink: 0;
+
+    @include media('lg') {
+      width: 80px;
+      height: 23px;
+    }
   }
 
   &_link {
     display: flex;
     align-items: center;
     gap: 32px;
+
+    @include media('lg') {
+      width: 100%;
+      order: 3;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 17px;
+    }
+
+    .mobile_link {
+      display: none;
+
+      @include media('lg') {
+        display: block;
+      }
+    }
+
+    .desktop_link {
+
+      @include media('lg') {
+        display: none;
+      }
+    }
 
     a {
       font-weight: 500;
@@ -34,6 +72,11 @@
       text-align: center;
       color: $color-white;
       transition: .3s ease;
+
+      @include media('lg') {
+        font-size: 13px;
+        line-height: 17px;
+      }
 
       &:hover {
         color: $color-green-light;
@@ -50,5 +93,11 @@
     line-height: 22px;
     text-align: center;
     color: $color-green;
+
+    @include media('lg') {
+      font-size: 13px;
+      line-height: 17px;
+      padding: 12px 24px;
+    }
   }
 }

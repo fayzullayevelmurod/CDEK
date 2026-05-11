@@ -28,6 +28,10 @@ body {
   font-style: normal;
   font-display: swap;
   margin: 8px;
+
+  @include media('lg') {
+    margin: 4px;
+  }
 }
 
 input, textarea {
