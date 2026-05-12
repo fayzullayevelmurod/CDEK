@@ -1,0 +1,196 @@
+// advantages
+.advantages {
+  background-image: url('../images/advantages.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  padding: 100px 0;
+
+  @include media('lg') {
+    border-radius: 24px;
+    padding: 52px 0;
+    background-position: center;
+  }
+
+  &_head {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 24px;
+
+    @include media('xl') {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    @include media('lg') {
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 70px;
+      font-style: italic;
+      line-height: 76px;
+      letter-spacing: -2%;
+      color: $color-white;
+      max-width: 540px;
+
+      span {
+        display: block;
+        color: $color-green-light;
+      }
+
+      br {
+        @include media('xl') {
+          display: block;
+        }
+      }
+
+      @include media('xl') {
+        max-width: 100%;
+      }
+
+      @include media('lg') {
+        font-size: 32px;
+        line-height: 36px;
+      }
+    }
+
+    &-text {
+      width: 636px;
+      border-radius: 28px;
+      background: #FFFFFF1A;
+      padding: 51px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      text-align: center;
+
+      @include media('lg') {
+        border-radius: 24px;
+        padding: 24px;
+        gap: 16px;
+        max-width: 320px;
+      }
+
+      h3 {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 40px;
+        line-height: 46px;
+        letter-spacing: -2%;
+        color: $color-white;
+
+        @include media('lg') {
+          font-size: 24px;
+          line-height: 28px;
+        }
+      }
+
+      p {
+        font-weight: 700;
+        font-style: Italic;
+        font-size: 22px;
+        line-height: 28px;
+        color: $color-white;
+
+        br {
+          @include media('lg') {
+            display: none;
+          }
+        }
+
+        @include media('lg') {
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+
+  &_blocks {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+    margin-bottom: 40px;
+
+    @include media('xl') {
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    @include media('lg') {
+      margin-bottom: 24px;
+    }
+
+    @include media('md') {
+      grid-template-columns: repeat(1,1fr);
+      gap: 4px;
+    }
+  }
+
+  &_block {
+    border-radius: 40px;
+    background: $color-white;
+    padding: 34px 108px 34px 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    @include media('lg') {
+      border-radius: 24px;
+      padding: 24px 72px 24px 24px;
+    }
+
+    .text {
+      max-width: 272px;
+    }
+
+    img {
+      position: absolute;
+      right: 0;
+      width: 96px;
+      height: 128px;
+
+      @include media('lg') {
+        width: 60px;
+        height: 80px;
+      }
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+      color: $color-dark;
+      margin-bottom: 16px;
+
+      @include media('lg') {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 8px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: $color-dark-75;
+
+      @include media('lg') {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .main-btn {
+    margin: auto;
+  }
+
+}
+// advantages
