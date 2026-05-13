@@ -1,0 +1,34 @@
+// contact
+.contact {
+  background-image: url('../images/contact.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  padding: 100px 0 195px 0;
+
+  @include media('lg') {
+    border-radius: 24px;
+    padding: 154px 0 52px 0;
+    background-position: center;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 76px;
+    letter-spacing: -2%;
+    text-align: center;
+    color: $color-white;
+  }
+
+  &_head-text {
+    font-weight: 700;
+    font-style: Italic;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF99;
+    margin: 12px 0 60px 0;
+  }
+}
+// contact

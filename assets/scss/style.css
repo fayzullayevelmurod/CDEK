@@ -365,6 +365,7 @@ address {
   max-width: 1584px;
   margin: auto;
   overflow: hidden;
+  position: relative;
 }
 
 ul, ol, dl {
@@ -1162,5 +1163,94 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 993px) {
   .integration_bottom .main-btn {
     width: 261px;
+  }
+}
+
+.contact {
+  background-image: url("../images/contact.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  padding: 100px 0 195px 0;
+}
+@media (max-width: 993px) {
+  .contact {
+    border-radius: 24px;
+    padding: 154px 0 52px 0;
+    background-position: center;
+  }
+}
+.contact h2 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 76px;
+  letter-spacing: -2%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.contact_head-text {
+  font-weight: 700;
+  font-style: Italic;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 12px 0 60px 0;
+}
+
+.footer {
+  padding: 32px 0 40px 0;
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 993px) {
+  .footer {
+    padding: 20px 0 16px 0;
+  }
+}
+.footer_in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1584px;
+  padding: 0 40px;
+  margin: auto;
+}
+@media (max-width: 993px) {
+  .footer_in {
+    flex-wrap: wrap;
+    row-gap: 12px;
+    padding: 0 16px;
+  }
+}
+.footer .logo {
+  width: 108px;
+  height: 31px;
+  display: flex;
+  flex-shrink: 0;
+}
+@media (max-width: 993px) {
+  .footer .logo {
+    width: 80px;
+    height: 23px;
+  }
+}
+.footer p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-align: right;
+}
+.footer p br {
+  display: none;
+}
+@media (max-width: 993px) {
+  .footer p br {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
