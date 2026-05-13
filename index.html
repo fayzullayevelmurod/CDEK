@@ -105,6 +105,63 @@
             </section>
             <!-- about -->
 
+            <!-- model -->
+            <section class="model">
+                <div class="container">
+                    <h2>
+                        <i>Плюсы</i> модели DBS для:
+                    </h2>
+                    <div class="tabs-container">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-id="content1">
+                                <img src="./assets/images/model1.svg" alt="">
+                                <span>
+                                    Wildberries DBS
+                                </span>
+                            </button>
+                            <button class="tab-btn" data-id="content2">
+                                <img src="./assets/images/model2.svg" alt="">
+                                <span>
+                                    Ozon realFBS
+                                </span>
+                            </button>
+                            <button class="tab-btn" data-id="content3">
+                                <img src="./assets/images/model3.svg" alt="">
+                                <span>
+                                    Яндекс Маркет
+                                </span>
+                            </button>
+                            <button class="tab-btn" data-id="content4">
+                                <img src="./assets/images/model4.svg" alt="">
+                                <span>
+                                    Avito
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="content active" id="content1">
+                                <h3>Asosiy sahifa</h3>
+                                <p>Bu yerdagi ma'lumotlar bosh sahifaga tegishli.</p>
+                            </div>
+                            <div class="content" id="content2">
+                                <h3>Biz haqimizda</h3>
+                                <p>Kompaniyamiz tarixi va jamoamiz bilan tanishing.</p>
+                            </div>
+                            <div class="content" id="content3">
+                                <h3>Aloqa</h3>
+                                <p>Biz bilan bog'lanish uchun quyidagi formani to'ldiring.</p>
+                            </div>
+                            <div class="content" id="content4">
+                                <h3>Aloqa</h3>
+                                <p>Biz bilan bog'lanish uchun quyidagi formani to'ldiring.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- model -->
+
             <!-- advantages -->
             <section class="advantages">
                 <div class="container">
@@ -310,26 +367,95 @@
             <!-- contact -->
             <section class="contact">
                 <div class="container">
-                    <h2>
-                        Заключить договор
-                    </h2>
-                    <p class="contact_head-text">
-                        Заключите договор со CDEK, чтобы начать пользоваться интеграцией для модели DBS
-                    </p>
-                    <form action="#">
-                        <div class="contact_inputs">
-                            <input type="text" placeholder="Имя">
-                            <input type="text" placeholder="Город">
-                            <input type="email" placeholder="E-mail">
-                            <input type="tel" placeholder="Номер телефона">
-                            <input type="text" placeholder="ИНН организации">
-                            <select name="" id="">
-                                <option value="1">
-                                    Маркетплейс
-                                </option>
-                            </select>
-                        </div>
-                    </form>
+                    <div class="contact_in">
+                        <h2>
+                            Заключить договор
+                        </h2>
+                        <p class="contact_head-text">
+                            Заключите договор со CDEK, чтобы начать пользоваться интеграцией для модели DBS
+                        </p>
+                        <form action="#">
+                            <div class="contact_inputs">
+                                <div class="input_block">
+                                    <input type="text" placeholder="Имя">
+                                </div>
+                                <div class="input_block">
+                                    <input type="text" placeholder="Город">
+                                </div>
+                                <div class="input_block">
+                                    <input type="email" placeholder="E-mail">
+                                </div>
+                                <div class="input_block">
+                                    <input type="tel" placeholder="Номер телефона">
+                                </div>
+                                <div class="input_block">
+                                    <input type="text" placeholder="ИНН организации">
+                                </div>
+                                <div class="custom-select" id="customSelect">
+                                    <button class="select-head" type="button">
+                                        <span>
+                                            Маркетплейс
+                                        </span>
+
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.6666 7.08325L9.99998 13.7499L3.33331 7.08325" stroke="white" stroke-width="1.8"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="select-dropdown">
+                                        <span class="option">
+                                            Wildberries DBS
+                                        </span>
+                                        <span class="option">
+                                            Ozon realFBS
+                                        </span>
+                                        <span class="option">
+                                            Яндекс Маркет
+                                        </span>
+                                        <span class="option">
+                                            Avito
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact_bottom">
+                                <p>
+                                    Нажимая кнопку «Подключить доставку» Я принимаю условия<br>
+                                    <a href="#">Пользовательского соглашения</a> и даю своё согласие на <a href="#">Политику сбора ПДн клиентов</a>
+                                </p>
+                                <button class="main-btn submit_btn" type="submit">
+                                    <span>
+                                        Заключить договор
+                                    </span>
+                                    <span class="icon">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 24L20 34L40 14" stroke="#3C463F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact_end">
+                        <h2>
+                            Форма отправлена
+                        </h2>
+                        <p class="contact_head-text">
+                            Мы скоро свяжемся с Вами
+                        </p>
+                        <button class="main-btn prev_btn">
+                            <span>
+                                Отправить форму еще раз
+                            </span>
+                            <span class="icon">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M38 24L10 24M18 32L10 24L18 16" stroke="#3C463F" stroke-width="1.8" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </section>
             <!-- contact -->
